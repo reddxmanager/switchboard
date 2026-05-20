@@ -5,7 +5,7 @@ import type {
 } from "./types";
 
 export const API_BASE = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
-export const WS_BASE = "wss://switchboard-api.onrender.com";
+export const WS_BASE = import.meta.env.VITE_WS_BASE_URL ?? "ws://localhost:8000";
 
 export const demoRequest: DemoRequest = {
   request_text: "I need 20 bags of cement delivered to Zambales by Friday, budget 8,000.",
